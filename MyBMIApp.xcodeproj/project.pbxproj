@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		694DD0C02443403200B682A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DD0BF2443403200B682A1 /* AppDelegate.swift */; };
-		694DD0C22443403200B682A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DD0C12443403200B682A1 /* ViewController.swift */; };
-		694DD0C52443403200B682A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694DD0C32443403200B682A1 /* Main.storyboard */; };
 		694DD0C72443403200B682A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694DD0C62443403200B682A1 /* Assets.xcassets */; };
 		694DD0CA2443403200B682A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694DD0C82443403200B682A1 /* LaunchScreen.storyboard */; };
 		694DD0D52443403200B682A1 /* MyBMIAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DD0D42443403200B682A1 /* MyBMIAppTests.swift */; };
 		694DD0E02443403200B682A1 /* MyBMIAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DD0DF2443403200B682A1 /* MyBMIAppUITests.swift */; };
+		694DD0EE244340C200B682A1 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DD0ED244340C200B682A1 /* MainTabController.swift */; };
+		694DD0F0244341A600B682A1 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DD0EF244341A600B682A1 /* EditViewController.swift */; };
+		694DD0F2244341B300B682A1 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DD0F1244341B300B682A1 /* HistoryViewController.swift */; };
+		694DD0F62444453A00B682A1 /* InputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 694DD0F52444453A00B682A1 /* InputView.xib */; };
+		694DD0F82444465100B682A1 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694DD0F72444465100B682A1 /* InputView.swift */; };
+		69906C502467D0D2001C23BC /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69906C4E2467D0D2001C23BC /* Realm.framework */; };
+		69906C512467D0D2001C23BC /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69906C4E2467D0D2001C23BC /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		69906C522467D0D2001C23BC /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69906C4F2467D0D2001C23BC /* RealmSwift.framework */; };
+		69906C532467D0D2001C23BC /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69906C4F2467D0D2001C23BC /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6997594D245D633D008D5287 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6997594C245D633D008D5287 /* UserInfo.swift */; };
+		69B7798B247284DC0047CD17 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B77989247284DC0047CD17 /* HistoryItem.swift */; };
+		69B7798C247284DC0047CD17 /* HistoryItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69B7798A247284DC0047CD17 /* HistoryItem.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,11 +43,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		69906C542467D0D2001C23BC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				69906C532467D0D2001C23BC /* RealmSwift.framework in Embed Frameworks */,
+				69906C512467D0D2001C23BC /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		694DD0BC2443403200B682A1 /* MyBMIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBMIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		694DD0BF2443403200B682A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		694DD0C12443403200B682A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		694DD0C42443403200B682A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		694DD0C62443403200B682A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		694DD0C92443403200B682A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		694DD0CB2443403200B682A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +70,16 @@
 		694DD0DB2443403200B682A1 /* MyBMIAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBMIAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		694DD0DF2443403200B682A1 /* MyBMIAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBMIAppUITests.swift; sourceTree = "<group>"; };
 		694DD0E12443403200B682A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		694DD0ED244340C200B682A1 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		694DD0EF244341A600B682A1 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		694DD0F1244341B300B682A1 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		694DD0F52444453A00B682A1 /* InputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputView.xib; sourceTree = "<group>"; };
+		694DD0F72444465100B682A1 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		69906C4E2467D0D2001C23BC /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		69906C4F2467D0D2001C23BC /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		6997594C245D633D008D5287 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		69B77989247284DC0047CD17 /* HistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
+		69B7798A247284DC0047CD17 /* HistoryItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryItem.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69906C522467D0D2001C23BC /* RealmSwift.framework in Frameworks */,
+				69906C502467D0D2001C23BC /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +116,7 @@
 				694DD0D32443403200B682A1 /* MyBMIAppTests */,
 				694DD0DE2443403200B682A1 /* MyBMIAppUITests */,
 				694DD0BD2443403200B682A1 /* Products */,
+				69906C4D2467D0D2001C23BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +133,11 @@
 		694DD0BE2443403200B682A1 /* MyBMIApp */ = {
 			isa = PBXGroup;
 			children = (
+				6997594B245D60A2008D5287 /* data */,
+				694DD0ED244340C200B682A1 /* MainTabController.swift */,
+				694DD0FF244C253100B682A1 /* input */,
+				694DD0FC244C24BE00B682A1 /* history */,
 				694DD0BF2443403200B682A1 /* AppDelegate.swift */,
-				694DD0C12443403200B682A1 /* ViewController.swift */,
-				694DD0C32443403200B682A1 /* Main.storyboard */,
 				694DD0C62443403200B682A1 /* Assets.xcassets */,
 				694DD0C82443403200B682A1 /* LaunchScreen.storyboard */,
 				694DD0CB2443403200B682A1 /* Info.plist */,
@@ -125,6 +163,59 @@
 			path = MyBMIAppUITests;
 			sourceTree = "<group>";
 		};
+		694DD0FC244C24BE00B682A1 /* history */ = {
+			isa = PBXGroup;
+			children = (
+				69B77988247284130047CD17 /* xib */,
+				694DD0F1244341B300B682A1 /* HistoryViewController.swift */,
+			);
+			path = history;
+			sourceTree = "<group>";
+		};
+		694DD0FF244C253100B682A1 /* input */ = {
+			isa = PBXGroup;
+			children = (
+				694DD100244C254700B682A1 /* xib */,
+				694DD0EF244341A600B682A1 /* EditViewController.swift */,
+			);
+			path = input;
+			sourceTree = "<group>";
+		};
+		694DD100244C254700B682A1 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				694DD0F52444453A00B682A1 /* InputView.xib */,
+				694DD0F72444465100B682A1 /* InputView.swift */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
+		69906C4D2467D0D2001C23BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69906C4E2467D0D2001C23BC /* Realm.framework */,
+				69906C4F2467D0D2001C23BC /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6997594B245D60A2008D5287 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				6997594C245D633D008D5287 /* UserInfo.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		69B77988247284130047CD17 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				69B77989247284DC0047CD17 /* HistoryItem.swift */,
+				69B7798A247284DC0047CD17 /* HistoryItem.xib */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +226,7 @@
 				694DD0B82443403200B682A1 /* Sources */,
 				694DD0B92443403200B682A1 /* Frameworks */,
 				694DD0BA2443403200B682A1 /* Resources */,
+				69906C542467D0D2001C23BC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,8 +325,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				694DD0CA2443403200B682A1 /* LaunchScreen.storyboard in Resources */,
+				69B7798C247284DC0047CD17 /* HistoryItem.xib in Resources */,
 				694DD0C72443403200B682A1 /* Assets.xcassets in Resources */,
-				694DD0C52443403200B682A1 /* Main.storyboard in Resources */,
+				694DD0F62444453A00B682A1 /* InputView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +352,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				694DD0C22443403200B682A1 /* ViewController.swift in Sources */,
 				694DD0C02443403200B682A1 /* AppDelegate.swift in Sources */,
+				694DD0EE244340C200B682A1 /* MainTabController.swift in Sources */,
+				69B7798B247284DC0047CD17 /* HistoryItem.swift in Sources */,
+				694DD0F82444465100B682A1 /* InputView.swift in Sources */,
+				694DD0F2244341B300B682A1 /* HistoryViewController.swift in Sources */,
+				6997594D245D633D008D5287 /* UserInfo.swift in Sources */,
+				694DD0F0244341A600B682A1 /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +394,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		694DD0C32443403200B682A1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				694DD0C42443403200B682A1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		694DD0C82443403200B682A1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -428,6 +518,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8VMZR4345;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MyBMIApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hideki.sato.MyBMIApp;
@@ -443,6 +537,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8VMZR4345;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MyBMIApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hideki.sato.MyBMIApp;
